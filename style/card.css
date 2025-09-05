@@ -1,0 +1,98 @@
+.projects-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-02);
+  border-radius: 16px;
+  padding: 1.5rem;
+  max-width: 320px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  transition: 0.3s ease;
+}
+
+.projects-card:hover {
+  transform: translateY(-8px);
+}
+
+.projects-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.projects-card h3 {
+  margin-bottom: .5rem;
+  color: var(--h-03);
+}
+
+.card-author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.avatar {
+  position: relative; /* important for half-circle placement */
+  width: 3rem;
+  height: 3rem;
+}
+
+.author-avatar img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  filter: grayscale(100%);
+}.avatar {
+  width: 3rem;
+  height: 3rem;
+}
+
+.author-avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  filter: grayscale(100%);
+}
+
+.half-circle {
+  position: absolute;
+  left: 50%;
+  bottom: -8px;
+  transform: translateX(-50%);
+  width: 75px;
+  height: 38px;
+  fill: none;
+  stroke: #ff8a00;
+  stroke-width: 8;
+  stroke-linecap: round;
+}
+
+
+.tags {
+  margin-top: 1rem;
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+}
+
+.tags a {
+  font-weight: 600;
+  font-size: 0.7rem;
+  color: #7a7a8c;
+  text-transform: uppercase;
+  border: 2px solid #28242f;
+  border-radius: 2rem;
+  padding: 0.25rem 0.75rem;
+  transition: 0.2s;
+}
+
+.tags a:hover {
+  background: linear-gradient(90deg,#ff8a00,#e52e71);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  border-color: white;
+}
